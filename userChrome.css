@@ -1,3 +1,4 @@
+
 :root {
   --sidebar-min-width: 33px;
   --sidebar-visible-width: 300px;
@@ -20,7 +21,7 @@
   position: relative !important;
   min-width: var(--sidebar-min-width) !important;
   max-width: var(--sidebar-min-width) !important;
-transition: .2s ease .25s;
+  transition: .2s ease .25s;
   z-index:1;
 }
 
@@ -31,13 +32,13 @@ transition: .2s ease .25s;
   margin-right: calc((var(--sidebar-visible-width) - var(--sidebar-min-width)) * -1) !important;
   z-index:1;
   position: relative !important;
-transition: .2s ease .25s;
-
+  transition: .15s ease .25s;
 }
 
 #TabsToolbar > .toolbar-items,
 #TabsToolbar > .titlebar-spacer{ visibility: hidden }
 #nav-bar{ margin-top: -32px; margin-right: 20px; padding: 0px 150px 0px 0px !important; }
+
 
 /* Centred Bookmark */
 #PlacesToolbarItems{ -moz-box-pack: center }
@@ -48,7 +49,7 @@ transition: .2s ease .25s;
 #PersonalToolbar{
   --uc-bm-height: 20px; /* Might need to adjust if the toolbar has other buttons */
   --uc-bm-padding: 2px; /* Vertical padding to be applied to bookmarks */
-  --uc-autohide-toolbar-delay: 600ms; /* The toolbar is hidden after */
+  --uc-autohide-toolbar-delay: 400ms; /* The toolbar is hidden after */
 }
 
 :root[uidensity="compact"] #PersonalToolbar{ --uc-bm-padding: 1px }
