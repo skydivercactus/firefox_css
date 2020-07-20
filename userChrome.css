@@ -38,3 +38,35 @@ transition: .2s ease .25s;
 #TabsToolbar > .toolbar-items,
 #TabsToolbar > .titlebar-spacer{ visibility: hidden }
 #nav-bar{ margin-top: -32px; margin-right: 20px; padding: 0px 150px 0px 0px !important; }
+
+/* Centred Bookmark */
+#PlacesToolbarItems{ -moz-box-pack: center }
+
+
+/* Modified https://github.com/MrOtherGuy/firefox-csshacks  Configuration */
+
+#PersonalToolbar{
+  --uc-bm-height: 20px; /* Might need to adjust if the toolbar has other buttons */
+  --uc-bm-padding: 2px; /* Vertical padding to be applied to bookmarks */
+  --uc-autohide-toolbar-delay: 600ms; /* The toolbar is hidden after */
+}
+
+:root[uidensity="compact"] #PersonalToolbar{ --uc-bm-padding: 1px }
+:root[uidensity="touch"] #PersonalToolbar{ --uc-bm-padding: 6px }
+
+#PersonalToolbar:not([customizing]){
+  position: relative;
+  margin-bottom: calc(0px - var(--uc-bm-height) - 2 * var(--uc-bm-padding));
+  transform: rotateX(90deg);
+  transform-origin: top;
+  transition: transform 120ms linear var(--uc-autohide-toolbar-delay) !important;
+  z-index: 1;
+
+}
+#PlacesToolbarItems > .bookmark-item{ padding-block: var(--uc-bm-padding) !important; }
+
+/* Show when cursor is over the toolbar area */
+#navigator-toolbox:hover > #PersonalToolbar{
+  transition-delay: 100ms !important;
+  transform: rotateX(0);
+}
