@@ -1,8 +1,8 @@
 # Firefox CSS
 
-Hi! This just my personal Firefox CSS and brower configuration. Just a minimal Firefox css modification. 
+Hi! This just my personal Firefox CSS and brower configuration. Just a minimal Firefox css modification. Not a heavy css modification, hasn't really broken due to any firefox updates yet. 
 
-This repository are tested only on Windows 10 1909 & OpenSuse Tumbleweed July 2020. 
+This repository are tested only on Windows 10 1909 & OpenSuse Tumbleweed July 2020. Feel free to test on your setup and share feedback. 
 
 # Required Addons
 
