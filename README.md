@@ -4,6 +4,8 @@ Hi! This just my personal Firefox CSS and brower configuration. Just a minimal F
 
 This repository are tested only on Windows 10 1909 & OpenSuse Tumbleweed July 2020. Feel free to test on your setup and share feedback. 
 
+Tested to work on: v89.0 
+
 # Required Addons
 
 - [Sidebery](https://github.com/mbnuqw/sidebery/)
